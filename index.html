@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Form</title>
+</head>
+<body>
+    <div class="FormContainer">
+    <h1>Simple Quiz</h1>
+    <form name="quiz" id="quiz-form">
+    <div class="Question1">
+        <div class="form-control">
+            <div>
+                <span class="questions">Question 1:</span> What is the capital of the Philippines? <br>
+                <input type="text" name="Q1" class="Q1" />
+                <div id="result-Q1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Question2">
+        <div class="form-control">
+            <div>
+                <span class="questions">Question 2:</span> What is the value of x? x = 3 + 2*5<br>
+                <label><input type="radio" name="Q2" class="Q2" value="A" />x = 25</label><br>
+                <label><input type="radio" name="Q2" class="Q2" value="B" />x = 13</label><br>
+                <label><input type="radio" name="Q2" class="Q2" value="C" />x = 18</label>
+                <div id="result-Q2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Question3">
+        <div class="form-control">
+            <div>
+                <span class="questions">Question 3:</span> Which of the following birds can fly? Choose 3 correct answers.<br>
+                <label><input type="checkbox" name="Q3" class="Q3" value="A" />Parrot</label><br>
+                <label><input type="checkbox" name="Q3" class="Q3" value="B" />Eagle</label><br>
+                <label><input type="checkbox" name="Q3" class="Q3" value="C" />Penguin</label><br>
+                <label><input type="checkbox" name="Q3" class="Q3" value="D" />Crow</label>
+                <div id="result-Q3"></div>
+            </div>
+        </div>
+    </div>
+        <div>
+            <button type="submit" name="submitBtn"> Submit </button>
+            <button type="reset" name="resetBtn"> Reset </button>
+         </div>
+    </form>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
